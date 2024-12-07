@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Invitación XV Años</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagen de fondo y contenido principal -->
+        <div class="image-bg">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Damaris</h1>
+                <p>MIS XV AÑOS</p>
+                <p>04 Enero 2025</p>
+                
+                <!-- Botón para reproducir música -->
+                <div class="music-button-container">
+                    <button id="play-music-button" class="music-button">Reproducir Música</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección del mensaje -->
+        <div class="message-section">
+            <p>Hay eventos en la vida que son muy especiales por sí solos, pero poder compartirlos con quienes más quiero, los convierte en momentos únicos e inolvidables.</p>
+            <p>¡Te esperamos en mi fiesta!</p>
+        </div>
+
+        <!-- Sección de cuenta regresiva -->
+        <div class="countdown-section">
+            <div class="countdown-title">Tan solo faltan</div>
+            <div class="countdown">
+                <div><span id="dias">0</span> <span>DÍAS</span></div>
+                <div><span id="horas">00</span> <span>HORAS</span></div>
+                <div><span id="minutos">00</span> <span>MINUTOS</span></div>
+                <div><span id="segundos">00</span> <span>SEGUNDOS</span></div>
+            </div>
+            <div class="countdown-title">Para este día tan especial</div>
+        </div>
+        
+        <script src="cuentaRegresiva.js"></script> <!-- Enlace al archivo JavaScript -->
+        
+        
+        <!-- Detalles de la recepción -->
+        <div class="reception-details">
+            <h2>Recepción</h2>
+            <div class="icon">📅</div>
+            <p class="details">Sábado, 04 Enero del 2025</p>
+            <div class="icon">⏰</div>
+            <p class="details">02:00 PM</p>
+            <div class="icon">📍</div>
+            <p class="details">Salon Quinta Elisa<br>Calle de Industria 304, Morelos, Ocotlán de Morelos, Oaxaca.</p>
+            
+            <!-- Botón para Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.60076811629506!2d-96.67100348852395!3d16.800705022148517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c740a90e8ad557%3A0x8bfbc6209f6bd286!2sQuinta%20ELISA!5e0!3m2!1ses!2smx!4v1728526891677!5m2!1ses!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://www.google.com.mx/maps/place/Quinta+ELISA/@16.8007236,-96.6709735,21z/data=!4m6!3m5!1s0x85c740a90e8ad557:0x8bfbc6209f6bd286!8m2!3d16.8007518!4d-96.670912!16s%2Fg%2F11ddxtvdrs?entry=ttu&g_ep=EgoyMDI0MTAwNy4xIKXMDSoASAFQAw%3D%3D" class="map-button" target="_blank">Ir al mapa</a>
+        </div>
+
+        <!-- Sección de lluvia de sobres -->
+        <div class="rain-of-envelopes-section">
+            <h2>Lluvia de Sobres</h2>
+            <p>En lugar de regalos, te invitamos a participar en nuestra lluvia de sobres. ¡Tu contribución será muy apreciada!</p>
+        </div>
+
+        <!-- Reproductor de música invisible -->
+        <audio id="background-music" loop>
+            <source src="musica.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+    </div>
+
+    <script>
+        // Reproducir música automáticamente cuando se hace clic en el botón
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('background-music');
+            var playButton = document.getElementById('play-music-button');
+
+            playButton.addEventListener('click', function() {
+                audio.play();
+                playButton.style.display = 'none'; // Ocultar el botón después de reproducir la música
+            });
+        });
+    </script>
+
+</body>
+</html>

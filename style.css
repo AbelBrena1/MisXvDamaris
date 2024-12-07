@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.container .image-bg {
+    background-image: url(Imagenes/1733535827188.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-family: 'Cursive', serif;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}
+
+.content p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #c3a593;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #b29280;
+}
+
+.message-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 2px solid #c3a593;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.message-section p {
+    margin: 0;
+    padding: 10px;
+    color: #333;
+}
+
+.countdown-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.countdown-title {
+    font-size: 2.5em;
+    color: #6d5d50;
+    font-family: 'Cursive', serif;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.countdown div {
+    background-color: #f5f5f5;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #333;
+    border: 2px solid #c3a593;
+}
+
+.countdown div span {
+    display: block;
+    font-size: 0.8em;
+    color: #6d5d50;
+}
+
+.footer {
+    text-align: center;
+    color: #6d5d50;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.subheading {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.reception-details {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reception-details h2 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2em;
+    color: #b08c60;
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: block;
+    margin: 20px 0;
+}
+
+.details {
+    font-size: 1em;
+    color: #6f6f6f;
+    margin-bottom: 20px;
+}
+
+.map-button {
+    background-color: #f8f8f8;
+    border: 1px solid #b08c60;
+    border-radius: 10px;
+    color: #b08c60;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.map-button:hover {
+    background-color: #b08c60;
+    color: #fff;
+}
+
+.footer {
+    margin-top: 30px;
+    color: #b08c60;
+    font-size: 1em;
+}
+
+/* Decoración de las esquinas */
+.corner-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('https://example.com/deco.png'); /* Reemplaza con tu imagen */
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.corner-decoration-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('https://example.com/deco.png'); /* Reemplaza con tu imagen */
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/* Estilos para la sección de lluvia de sobres */
+.rain-of-envelopes-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 2px solid #c3a593;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.rain-of-envelopes-section h2 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2em;
+    color: #b08c60;
+    margin-bottom: 10px;
+}
+
+.rain-of-envelopes-section p {
+    font-size: 1.4em;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+.rain-of-envelopes-section {
+    background-color: #ffffffd3;
+    padding: 30px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos para el botón de reproducción de música */
+.music-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.music-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #c3a593;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.music-button:hover {
+    background-color: #b29280;
+}
